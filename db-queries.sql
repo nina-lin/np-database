@@ -112,9 +112,3 @@ left join worksOn on volunteer.empID = worksOn.empID
 right join project on project.projectID = worksOn.projectID
 group by projName, status
 having count(volunteer.empID) < 1;
-
--- Note, when the instructions use a term like “for a given project”, it means you should write a query based on an actual value – for example, the “Gardening with Seniors” project
--- We will set up times during the week of Nov 30, which is finals week, for you to do a demo.
--- In addition, hand in the export file for your database and a  final report that is based on the report you handed in for Stage 2 (the second part only, not the ER model) showing all updates.
--- The report must be handed in, and the demo completed, by Wednesday Dec. 2 (note original due date on project spec says Nov 30).
--- Also note that although the final date for the demo is Dec. 2, you must hand in your report and queries at the time you do your demo.
